@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 #include "myfunc.h"
+#include "eq.h"
 
 int main()
 {
-    printf("Hello World!\n");
-    return myfunc(2);
+    int a, b, c;
+    des(a, b, c);
 }
