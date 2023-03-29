@@ -5,6 +5,8 @@
 typedef struct {
     float x1;
     float x2;
+    //float discr;
+
 
     int count;
 } roots;

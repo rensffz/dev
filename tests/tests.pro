@@ -18,12 +18,14 @@ DEFINES += INPUTDIR=\\\"$$PWD/input/\\\"
 
 HEADERS +=     tst_test1.h \
     ../app/myfunc.h \
+    ../app/eq.h \
     fibonachi_test.h \
     tst_stdout.h \
-    eq_test.h
+    des_test.h
 
 SOURCES +=     main.cpp \
-    ../app/myfunc.c
+    ../app/myfunc.c \
+    ../app/eq.c
 
 INCLUDEPATH += ../app
 
