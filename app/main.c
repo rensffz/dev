@@ -5,5 +5,6 @@
 
 int main()
 {
-    roots A = des(1,2,3);
+    int a=1,b=2,c=3;
+    des(a,b,c);
 }
