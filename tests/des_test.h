@@ -14,34 +14,42 @@ TEST(desTest, D0){
     ASSERT_EQ(des(1, -14, 49).count, 2);
     ASSERT_EQ(des(1, -14, 49).x1, 7);
     ASSERT_EQ(des(1, -14, 49).x2, 7);
+    ASSERT_EQ(des(1, -14, 49).x1, des(1, -14, 49).x2);
 
     ASSERT_EQ(des(4, -4, 1).count, 2);
     ASSERT_EQ(des(4, -4, 1).x1, 0.5);
     ASSERT_EQ(des(4, -4, 1).x2, 0.5);
+    ASSERT_EQ(des(4, -4, 1).x1, des(4, -4, 1).x2);
 
     ASSERT_EQ(des(1, 0, 0).count, 2);
     ASSERT_EQ(des(1, 0, 0).x1, 0);
     ASSERT_EQ(des(1, 0, 0).x2, 0);
+    ASSERT_EQ(des(1, 0, 0).x1, des(1, 0, 0).x2);
 
     ASSERT_EQ(des(1000, 0, 0).count, 2);
     ASSERT_EQ(des(1000, 0, 0).x1, 0);
     ASSERT_EQ(des(1000, 0, 0).x2, 0);
+    ASSERT_EQ(des(1000, 0, 0).x1, des(1000, 0, 0).x2);
 
     ASSERT_EQ(des(0, 5, 3).count, 2);
     ASSERT_FLOAT_EQ(des(0, 5, 3).x1, -0.6);
     ASSERT_FLOAT_EQ(des(0, 5, 3).x2, -0.6);
+    ASSERT_FLOAT_EQ(des(0, 5, 3).x1, des(0, 5, 3).x2);
 
     ASSERT_EQ(des(0, -7, 14).count, 2);
     ASSERT_EQ(des(0, -7, 14).x1, 2);
     ASSERT_EQ(des(0, -7, 14).x2, 2);
+    ASSERT_EQ(des(0, -7, 14).x1, des(0, -7, 14).x2);
 
     ASSERT_EQ(des(0, 5, 0).count, 2);
     ASSERT_EQ(des(0, 5, 0).x1, 0);
     ASSERT_EQ(des(0, 5, 0).x2, 0);
+    ASSERT_EQ(des(0, 5, 0).x1, des(0, 5, 0).x2);
 
     ASSERT_EQ(des(0, 100, 0).count, 2);
     ASSERT_EQ(des(0, 100, 0).x1, 0);
     ASSERT_EQ(des(0, 100, 0).x2, 0);
+    ASSERT_EQ(des(0, 100, 0).x1, des(0, 5, 0).x2);
 
 }
 
