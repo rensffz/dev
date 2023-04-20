@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-#include "myfunc.h"
 #include "eq.h"
 
 int main()
 {
-    int a=1,b=2,c=3;
-    des(a,b,c);
+    float a=-1,b=0,c=1.44;
+    roots A = des(a,b,c);
+
+    printf("%d", A.count);
+
 }

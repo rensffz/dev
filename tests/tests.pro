@@ -10,21 +10,16 @@ QMAKE_CXXFLAGS += -Wall -Wextra
 QMAKE_CFLAGS += -Wall -Wextra -Werror
 
 # gcov
-QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
-QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
-LIBS += -lgcov
+#QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+#QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
+#LIBS += -lgcov
 
 DEFINES += INPUTDIR=\\\"$$PWD/input/\\\"
 
-HEADERS +=     tst_test1.h \
-    ../app/myfunc.h \
-    ../app/eq.h \
-    fibonachi_test.h \
-    tst_stdout.h \
+HEADERS += ../app/eq.h \ \
     des_test.h
 
 SOURCES +=     main.cpp \
-    ../app/myfunc.c \
     ../app/eq.c
 
 INCLUDEPATH += ../app

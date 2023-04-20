@@ -10,6 +10,6 @@ typedef struct {
 
     int count;
 } roots;
-roots des(int a, int b, int c);
+roots des(float a, float b, float c);
 
 #endif // EQ_H

@@ -4,7 +4,7 @@
 #include "eq.h"
 
 
-roots des(int a, int b, int c) {
+roots des(float a, float b, float c) {
     roots answer;
 
     float D = b * b - 4 * a * c;
@@ -12,10 +12,30 @@ roots des(int a, int b, int c) {
 
     if (a == 0)
     {
-        answer.count = 1;
-        answer.x1 = -c/b;
-        answer.x2 = -c/b;
-        return answer;
+        if (b == 0)
+        {
+            if (c == 0)
+            {
+                answer.count = 2;
+                answer.x1 = 0;
+                answer.x2 = 0;
+                return answer;
+            }
+            else
+            {
+                answer.count = 0;
+                answer.x1 = -1;
+                answer.x2 = -1;
+                return answer;
+            }
+        }
+        else
+        {
+            answer.count = 2;
+            answer.x1 = (float)-c/b;
+            answer.x2 = (float)-c/b;
+            return answer;
+        }
     }
     if (D < 0){
         answer.x1 = -1;
@@ -24,10 +44,20 @@ roots des(int a, int b, int c) {
         return answer;
     }
     else {
-        answer.x1 = (-b+sqrt(D))/(2*a);
-        answer.x2 = (-b-sqrt(D))/(2*a);
-        answer.count = 2;
-        return answer;
+        if (a > 0)
+        {
+            answer.x1 = (-b+sqrt(D))/(2*a);
+            answer.x2 = (-b-sqrt(D))/(2*a);
+            answer.count = 2;
+            return answer;
+        }
+        else
+        {
+            answer.x2 = (-b+sqrt(D))/(2*a);
+            answer.x1 = (-b-sqrt(D))/(2*a);
+            answer.count = 2;
+            return answer;
+        }
     }
 }
 
