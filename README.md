@@ -1,5 +1,5 @@
 [![CI/CD GitHub Actions](https://github.com/rensffz/dev/actions/workflows/test-action.yml/badge.svg)](https://github.com/rensffz/dev/actions/workflows/test-action.yml)
-[![Coverage Status](https://coveralls.io/repos/github/rensffz/dev/badge.svg?branch=main)](https://coveralls.io/github/rensffz/dev?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/rensffz/project/badge.svg?branch=main)](https://coveralls.io/github/rensffz/project?branch=main)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rensffz_dev&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rensffz_dev)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=rensffz_dev&metric=bugs)](https://sonarcloud.io/summary/new_code?id=rensffz_dev)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=rensffz_dev&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=rensffz_dev)
